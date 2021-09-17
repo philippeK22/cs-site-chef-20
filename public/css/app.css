@@ -6148,6 +6148,9 @@ header .sombre button:nth-of-type(2) {
   background-color: red;
   color: white;
 }
+header .sombre a:hover {
+  color: red;
+}
 
 section {
   background-attachment: fixed;
