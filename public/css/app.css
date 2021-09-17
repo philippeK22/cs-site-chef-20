@@ -17235,30 +17235,38 @@ body {
   margin: 0;
 }
 
-header .sombre {
+header nav {
+  position: absolute;
+}
+header .carrousel-1 {
+  position: relative;
+}
+header .image1 {
   background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url(../images/banner1.jpg);
   height: 100vh;
+  background-repeat: no-repeat;
 }
-header .sombre h1, header .sombre .h1 {
+header .image1 h1, header .image1 .h1 {
   padding-top: 20%;
   color: white;
   text-transoform: uppercase;
   font-size: 50px;
   font-family: "courgette";
 }
-header .sombre span {
+header .image1 span {
   color: red;
 }
-header .sombre button {
+header .image1 button {
   border-radius: 30px;
   padding: 15px 30px;
   margin: 10px;
+  text-transform: uppercase;
 }
-header .sombre button:nth-of-type(1) {
+header .image1 button:nth-of-type(1) {
   color: black;
   background-color: white;
 }
-header .sombre button:nth-of-type(2) {
+header .image1 button:nth-of-type(2) {
   background-color: red;
   color: white;
 }
@@ -17269,6 +17277,34 @@ header .buttrond {
 }
 header .buttrond li a {
   background-color: red;
+}
+section:first-of-type {
+  background-image: url(../images/main_bg.jpg);
+  height: 100vh;
+  display: flex;
+}
+section:first-of-type .container {
+  background-color: white;
+}
+section:first-of-type .box {
+  display: flex;
+  justify-content: space-between;
+}
+section:first-of-type .row {
+  text-align: center;
+  justify-content: center;
+}
+section:first-of-type .row h1, section:first-of-type .row .h1 {
+  font-family: "courgette";
+  font-size: 50px;
+}
+section:first-of-type .row span {
+  color: red;
+  text-transform: uppercase;
+}
+section:first-of-type .row p {
+  width: 50%;
+  padding: 50px 0px;
 }
 
 /*# sourceMappingURL=app.css.map */
