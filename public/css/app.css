@@ -17284,7 +17284,6 @@ header .buttrond {
 
 section:first-of-type {
   background-image: url(../images/main_bg.jpg);
-  height: 100vh;
   display: flex;
 }
 section:first-of-type .container {
