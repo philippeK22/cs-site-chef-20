@@ -6074,8 +6074,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("../webfonts/fa-solid-900.eot");
-  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot");
+  src: url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff") format("woff"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf") format("truetype"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 .fa,
 .fas {
@@ -6092,8 +6092,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../webfonts/fa-brands-400.eot");
-  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg");
+  src: url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot");
+  src: url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2") format("woff2"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff") format("woff"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf") format("truetype"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg#fontawesome") format("svg");
 }
 .fab {
   font-family: "Font Awesome 5 Brands";
@@ -6109,8 +6109,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../webfonts/fa-regular-400.eot");
-  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
+  src: url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot");
+  src: url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2") format("woff2"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff") format("woff"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf") format("truetype"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg#fontawesome") format("svg");
 }
 .far {
   font-family: "Font Awesome 5 Free";
@@ -17237,6 +17237,11 @@ body {
 
 header nav {
   position: absolute;
+  z-index: 1;
+  top: 150px;
+}
+header li:hover {
+  color: red;
 }
 header .carrousel-1 {
   position: relative;
@@ -17245,6 +17250,7 @@ header .image1 {
   background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url(../images/banner1.jpg);
   height: 100vh;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 header .image1 h1, header .image1 .h1 {
   padding-top: 20%;
@@ -17254,7 +17260,7 @@ header .image1 h1, header .image1 .h1 {
   font-family: "courgette";
 }
 header .image1 span {
-  color: red;
+  color: #B12A3B;
 }
 header .image1 button {
   border-radius: 30px;
@@ -17267,7 +17273,7 @@ header .image1 button:nth-of-type(1) {
   background-color: white;
 }
 header .image1 button:nth-of-type(2) {
-  background-color: red;
+  background-color: #B12A3B;
   color: white;
 }
 header .buttrond {
@@ -17275,9 +17281,7 @@ header .buttrond {
   width: 15px;
   border-radius: 50%;
 }
-header .buttrond li a {
-  background-color: red;
-}
+
 section:first-of-type {
   background-image: url(../images/main_bg.jpg);
   height: 100vh;
@@ -17290,21 +17294,54 @@ section:first-of-type .box {
   display: flex;
   justify-content: space-between;
 }
-section:first-of-type .row {
-  text-align: center;
-  justify-content: center;
-}
 section:first-of-type .row h1, section:first-of-type .row .h1 {
   font-family: "courgette";
   font-size: 50px;
 }
 section:first-of-type .row span {
-  color: red;
+  color: #B12A3B;
   text-transform: uppercase;
 }
 section:first-of-type .row p {
-  width: 50%;
-  padding: 50px 0px;
+  padding: 0 25%;
+}
+section:first-of-type .row img {
+  font-size: 30%;
+}
+section:first-of-type .row .logoIcone {
+  color: #CCCCCC;
+  border-right: solid 3px;
+}
+section:first-of-type .row .logoIcone i {
+  font-size: 50px;
+  margin-top: 60px;
+}
+section:first-of-type .row .logoIcone i:hover {
+  color: #B12A3B;
+}
+section:first-of-type .row .logoIcone h3, section:first-of-type .row .logoIcone .h3 {
+  color: black;
+  font-family: "courgette";
+  border-bottom: #CCCCCC solid 3px;
+}
+section:first-of-type .row .col-5 img {
+  border-radius: 50%;
+  border: solid 5px grey;
+  width: 100px;
+  height: 100px;
+}
+section:first-of-type .row .col-5 h4, section:first-of-type .row .col-5 .h4 {
+  font-weight: bold;
+}
+section:first-of-type .row .col-5 p {
+  padding: 1px;
+  text-transform: capitalize;
+}
+section:first-of-type .row .col-5 span {
+  background-color: #CCCCCC;
+  color: #B12A3B;
+  font-weight: bold;
+  padding: 0 10px;
 }
 
 /*# sourceMappingURL=app.css.map */
