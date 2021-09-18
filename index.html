@@ -17,8 +17,8 @@
     <nav class="navbar navbar-expand-lg navbar-light  ">
       <div class="container-fluid d-flex ">
 
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-capitalize m-lg-5 border-top border-bottom p-2 ">
-          <li>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-capitalize m-lg-5 border-top border-bottom p-2  ">
+          <li class="d-flex">
             <a href=""></a>
             <a class="navbar-brand text-white mx-5" href="#">Home</a>
             <a class="navbar-brand text-white mx-5" href="#">About us</a>
@@ -31,7 +31,7 @@
         </div>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 m-lg-5 border-top border-bottom text-capitalize p-2">
-            <li>
+            <li class="d-flex">
               <a class="navbar-brand text-white" href="#">Reservation</a>
               <a class="navbar-brand text-white mx-5" href="#">Blog</a>
               <a class="navbar-brand text-white mx-5" href="#">Testimoials</a>
@@ -82,16 +82,17 @@
 
   <!-- section 1 -->
   <section>
-    <div class="container bg-white mt-5">
+
+    <div class="container bg-white mt-5 mb-5">
       <div class="box">
         <img src="./public/images/box-left-top.png" alt="box-left-top">
         <img src="./public/images/box-right-top.png" alt="box-right-top">
       </div>
       <div class="row text-center">
         <!-- Titre section 1 -->
-        <h1> <span>OUR</span> story </h1>
-        <img src="./public/images/decoration_line.png" alt="decoration_line">
-        <p class="text-center p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, doloremque. Maxime
+        <h1><span>OUR</span> story </h1>
+        <img src="./public/images/decoration_line.png" class="mb-5  " alt="decoration_line">
+        <p class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, doloremque. Maxime
           fugit fugiat voluptate.
           Debitis aliquam repellat doloremque soluta animi fugit neque, provident blanditiis tempore, eius quo expedita
           quis, aliquid cumque consequatur? Dolorem sint ipsam, natus quo qui perferendis perspiciatis, itaque neque
@@ -99,9 +100,9 @@
           ullam perspiciatis velit esse fugiat magnam commodi quam ipsum animi maxime, consequuntur quaerat illo
           praesentium culpa, quisquam est natus, ipsam ea.</p>
       </div>
-      <div class="row text-center">
+      <div class="row text-center mt-5">
         <h1><span>OUR</span> Menu List</h1>
-        <img src="./public/images/decoration_line.png" alt="decoration_line">
+        <img src="./public/images/decoration_line.png" class="mb-5  ms-5 " alt="decoration_line">
       </div>
       <!-- système de colonne -->
       <div class="container">
@@ -237,24 +238,27 @@
             </div>
 
           </div>
-
-          <div class="container bg-white mt-5">
-            <div class="box ">
-              <img src="./public/images/box-bottom-left.png" alt="box-bottom-left">
-              <img src="./public/images/decoration_line.png" class="h-75" alt="decoration_line">
-              <img src="./public/images/box-bottom_right.png" alt="box-bottom_right">
-            </div>
-          
-        
         </div>
 
+        <div class="container bg-white  ">
+          <div class="box ">
+            <img src="./public/images/box-bottom-left.png" alt="box-bottom-left">
+            <img src="./public/images/decoration_line.png" class="h-75" alt="decoration_line">
+            <img src="./public/images/box-bottom_right.png" alt="box-bottom_right">
+          </div>
+        </div>
+      </div>
+
   </section>
+
+
+
   <!-- fin de section 1   -->
   <!-- début de la section2 -->
   <section>
-    <div class="text-center pb-5">
-     <h1><span>MEET</span> our chef</h1>
-     <img src="./public/images/decoration_line.png" alt="decoration_line">
+    <div class="text-center pb-5 pt-5">
+      <h1><span>MEET</span> our chef</h1>
+      <img src="./public/images/decoration_line.png" alt="decoration_line">
     </div>
     <div class="container">
       <div class="row">
@@ -263,7 +267,7 @@
           <p class=" text-white">Lorem, ipsum.</p>
         </div>
         <div class="col-3 text-center">
-          <img src="./public/images/chef2.png" class="border-bottom" alt="chef2">
+          <img src="./public/images/chef2.png" class=" border-bottom" alt="chef2">
           <p class=" text-white">Lorem, ipsum.</p>
         </div>
         <div class="col-3 text-center">
@@ -277,6 +281,65 @@
       </div>
     </div>
     <!-- fin de la deuxième Section -->
+
+  </section>
+  <!-- début de ma 3ème Section -->
+  <section>
+    <div class="container bg-white mt-5">
+      <div class="box">
+        <img src="./public/images/box-left-top-grey.png" alt="box-left-top-grey">
+        <img src="./public/images/box-right-top-grey.png" alt="box-right-top-grey">
+      </div>
+      <div class="row text-center ">
+        <!-- Titre section 3 -->
+        <h1><span>BOOK</span> your table</h1>
+        <img src="./public/images/decoration_line.png" class="mb-5 w-auto " alt="decoration_line">
+      </div>
+      <div class="table-bg ">
+        <div class="text-center text-white ">
+          <p>For any query please call us at: <span>+91-1234567890</span></p>
+        </div>
+        <div class="container pt-5 ">
+          <div class="row text-center m-5 ">
+            <div class="col-6 rounded ">
+              <div>
+                <input type="text" class="rounded-pill" placeholder="Enter full name">
+              </div>
+              <div>
+                <input type="text" class="rounded-pill" placeholder="phone number">
+              </div>
+              <div>
+                <input type="text" class="rounded-pill" placeholder="date">
+              </div>
+              <div>
+                <input type="text" class="rounded-pill" placeholder="Occasion">
+              </div>
+
+
+            </div>
+
+            <div class="col-6">
+              <div class="">
+                <input type="text" class="rounded-pill" placeholder="Enter Id">
+              </div>
+              <div>
+                <input type="text" class="rounded-pill" placeholder="No of Person">
+              </div>
+              <div>
+                <input type="text" class="rounded-pill" placeholder="Time">
+              </div>
+              <div>
+                <input type="text" class="rounded-pill" placeholder="Cuisine">
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div>
+          <button>BooK Now</button>
+        </div>
+
+      </div>
 
   </section>
 

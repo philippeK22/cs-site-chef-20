@@ -17235,12 +17235,11 @@ body {
   margin: 0;
 }
 
-header nav {
+header .navbar {
   position: absolute;
   z-index: 1;
-  top: 150px;
 }
-header li:hover {
+header .navbar li:hover {
   color: red;
 }
 header .carrousel-1 {
@@ -17286,9 +17285,6 @@ section:first-of-type {
   background-image: url(../images/main_bg.jpg);
   display: flex;
 }
-section:first-of-type .container {
-  background-color: white;
-}
 section:first-of-type .box {
   display: flex;
   justify-content: space-between;
@@ -17303,9 +17299,6 @@ section:first-of-type .row span {
 }
 section:first-of-type .row p {
   padding: 0 25%;
-}
-section:first-of-type .row img {
-  font-size: 30%;
 }
 section:first-of-type .row .logoIcone {
   color: #CCCCCC;
@@ -17354,6 +17347,49 @@ section:nth-of-type(2) h1, section:nth-of-type(2) .h1 {
 }
 section:nth-of-type(2) h1 span, section:nth-of-type(2) .h1 span {
   color: #B12A3B;
+}
+
+section:nth-of-type(3) {
+  background-image: url(../images/main_bg.jpg);
+  display: flex;
+}
+section:nth-of-type(3) .container .box {
+  display: flex;
+  justify-content: space-between;
+}
+section:nth-of-type(3) .container .row h1, section:nth-of-type(3) .container .row .h1 {
+  font-family: "courgette";
+  font-size: 50px;
+}
+section:nth-of-type(3) .container .row span {
+  color: #B12A3B;
+}
+section:nth-of-type(3) .container .row img {
+  margin-left: 30%;
+}
+section:nth-of-type(3) .container .table-bg {
+  background-image: url(../images/book_table_bg.jpg);
+  background-size: cover;
+  margin: 0 10%;
+  border-radius: 3%;
+  height: 100vh;
+}
+section:nth-of-type(3) .container .table-bg p {
+  padding-top: 70px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+section:nth-of-type(3) .container .table-bg span {
+  font-weight: bolder;
+  font-size: 20px;
+}
+section:nth-of-type(3) .container .table-bg .col-6 input {
+  margin: 10px;
+  padding: 10px;
+  color: red;
+}
+section:nth-of-type(3) button {
+  color: red;
 }
 
 /*# sourceMappingURL=app.css.map */
