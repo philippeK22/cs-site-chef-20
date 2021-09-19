@@ -17399,30 +17399,25 @@ section:nth-of-type(3) .container .table-bg .col-6 input {
   color: red;
 }
 section:nth-of-type(3) .book-now {
-  margin-left: 45%;
+  margin-left: 40%;
 }
 section:nth-of-type(3) .book-now button {
   background-color: #B12A3B;
 }
-section .row {
-  margin-left: 10%;
-}
 section .row .col-6 .menu-3 {
-  width: 70%;
-  height: 30vh;
   border-radius: 15px;
 }
 section .row .col-6 .lorem-1 {
   background-color: #B12A3B;
   position: relative;
   color: white;
-  max-width: max-content;
   text-align: center;
   padding-top: 3%;
   bottom: 30px;
   border-radius: 10px;
-  left: 50px;
-  padding: 15px;
+  left: 20px;
+  padding: 15px 10px;
+  width: 75%;
 }
 section .row .col-6 span {
   font-size: 20px;
@@ -17442,6 +17437,59 @@ section .know-more {
 }
 section .know-more button {
   background-color: #B12A3B;
+}
+
+section:nth-of-type(4) {
+  background-image: linear-gradient(to right, #130c0cf1, #523e1fea), url(../images/testimonials_background.jpg);
+  background-size: cover;
+  position: relative;
+}
+section:nth-of-type(4) h1, section:nth-of-type(4) .h1 {
+  font-family: "courgette";
+  font-size: 50px;
+  color: white;
+}
+section:nth-of-type(4) h1 span, section:nth-of-type(4) .h1 span {
+  color: #B12A3B;
+}
+section:nth-of-type(4) .row .col-6 img {
+  margin: 15px;
+}
+section:nth-of-type(4) .row .col-6 .clients {
+  border: solid 1px white;
+  border-radius: 10px;
+}
+section:nth-of-type(4) .row .col-6 .clients h4, section:nth-of-type(4) .row .col-6 .clients .h4 {
+  color: white;
+}
+section:nth-of-type(4) .row .col-6 .clients span {
+  color: #B12A3B;
+}
+section:nth-of-type(4) .row .col-6 .clients p {
+  color: white;
+}
+section .our-contact {
+  background-image: url(../images/main_bg.jpg);
+  position: relative;
+  height: 100vh;
+  justify-content: center;
+  top: 20px;
+}
+section .our-contact h1, section .our-contact .h1 {
+  color: black;
+  font-family: "courgette";
+  margin-top: 5%;
+}
+section .our-contact img[alt=decoration_line] {
+  margin-left: 30%;
+}
+section .our-contact .box-rouge {
+  border-radius: 15px;
+  background-color: #B12A3B;
+}
+section .our-contact .box-rouge i {
+  font-size: 40px;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */
