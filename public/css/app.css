@@ -17235,47 +17235,50 @@ body {
   margin: 0;
 }
 
-header .navbar {
+body {
+  margin: 0;
+}
+body .navbar {
   position: absolute;
   z-index: 1;
 }
-header .navbar li:hover {
+body .navbar li:hover {
   color: red;
 }
-header .carrousel-1 {
+body .carrousel-1 {
   position: relative;
 }
-header .image1 {
+body .image1 {
   background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url(../images/banner1.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
-header .image1 h1, header .image1 .h1 {
+body .image1 h1, body .image1 .h1 {
   padding-top: 20%;
   color: white;
   text-transoform: uppercase;
   font-size: 50px;
   font-family: "courgette";
 }
-header .image1 span {
+body .image1 span {
   color: #B12A3B;
 }
-header .image1 button {
+body .image1 button {
   border-radius: 30px;
   padding: 15px 30px;
   margin: 10px;
   text-transform: uppercase;
 }
-header .image1 button:nth-of-type(1) {
+body .image1 button:nth-of-type(1) {
   color: black;
   background-color: white;
 }
-header .image1 button:nth-of-type(2) {
+body .image1 button:nth-of-type(2) {
   background-color: #B12A3B;
   color: white;
 }
-header .buttrond {
+body .buttrond {
   height: 15px;
   width: 15px;
   border-radius: 50%;
@@ -17291,7 +17294,6 @@ section:first-of-type .box {
 }
 section:first-of-type .row h1, section:first-of-type .row .h1 {
   font-family: "courgette";
-  font-size: 50px;
 }
 section:first-of-type .row span {
   color: #B12A3B;
@@ -17315,12 +17317,6 @@ section:first-of-type .row .logoIcone h3, section:first-of-type .row .logoIcone 
   color: black;
   font-family: "courgette";
   border-bottom: #CCCCCC solid 3px;
-}
-section:first-of-type .row .col-5 img {
-  border-radius: 50%;
-  border: solid 5px grey;
-  width: 100px;
-  height: 100px;
 }
 section:first-of-type .row .col-5 h4, section:first-of-type .row .col-5 .h4 {
   font-weight: bold;
@@ -17364,14 +17360,11 @@ section:nth-of-type(3) .container .row h1, section:nth-of-type(3) .container .ro
 section:nth-of-type(3) .container .row span {
   color: #B12A3B;
 }
-section:nth-of-type(3) .container .row img {
-  margin-left: 30%;
-}
 section:nth-of-type(3) .container .table-bg {
   background-image: url(../images/book_table_bg.jpg);
   background-size: cover;
   margin: 0 10%;
-  border-radius: 3%;
+  border-radius: 15px;
   height: 100vh;
 }
 section:nth-of-type(3) .container .table-bg p {
@@ -17383,13 +17376,30 @@ section:nth-of-type(3) .container .table-bg span {
   font-weight: bolder;
   font-size: 20px;
 }
+section:nth-of-type(3) .container .table-bg .col-6 p {
+  color: red;
+}
 section:nth-of-type(3) .container .table-bg .col-6 input {
   margin: 10px;
   padding: 10px;
   color: red;
 }
-section:nth-of-type(3) button {
-  color: red;
+section:nth-of-type(3) .book-now {
+  margin-left: 45%;
+  border-radius: 10%;
+}
+section:nth-of-type(3) .book-now button {
+  background-color: #B12A3B;
+}
+section:nth-of-type(3) .col-6 img {
+  border-radius: 15px;
+}
+section:nth-of-type(3) .col-6 p {
+  background-color: red;
+  position: relative;
+}
+section:nth-of-type(3) .col-6 span {
+  font-size: 50px;
 }
 
 /*# sourceMappingURL=app.css.map */
