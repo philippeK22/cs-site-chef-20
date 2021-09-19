@@ -17245,7 +17245,7 @@ body .navbar {
   position: absolute;
   z-index: 1;
 }
-body .navbar li:hover {
+body .navbar li a:hover {
   color: red;
 }
 body .carrousel-1 {
@@ -17348,6 +17348,7 @@ section:nth-of-type(2) {
 section:nth-of-type(2) h1, section:nth-of-type(2) .h1 {
   font-family: "courgette";
   font-size: 50px;
+  color: white;
 }
 section:nth-of-type(2) h1 span, section:nth-of-type(2) .h1 span {
   color: #B12A3B;
@@ -17403,6 +17404,7 @@ section:nth-of-type(3) .book-now {
 }
 section:nth-of-type(3) .book-now button {
   background-color: #B12A3B;
+  text-transform: uppercase;
 }
 section .row .col-6 .menu-3 {
   border-radius: 15px;
@@ -17437,6 +17439,8 @@ section .know-more {
 }
 section .know-more button {
   background-color: #B12A3B;
+  color: white;
+  text-transform: uppercase;
 }
 
 section:nth-of-type(4) {
@@ -17457,7 +17461,7 @@ section:nth-of-type(4) .row .col-6 img {
 }
 section:nth-of-type(4) .row .col-6 .clients {
   border: solid 1px white;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 section:nth-of-type(4) .row .col-6 .clients h4, section:nth-of-type(4) .row .col-6 .clients .h4 {
   color: white;
@@ -17481,7 +17485,7 @@ section .our-contact h1, section .our-contact .h1 {
   margin-top: 5%;
 }
 section .our-contact img[alt=decoration_line] {
-  margin-left: 30%;
+  margin-left: 35%;
 }
 section .our-contact .box-rouge {
   border-radius: 15px;
@@ -17490,6 +17494,31 @@ section .our-contact .box-rouge {
 section .our-contact .box-rouge i {
   font-size: 40px;
   margin: 10px;
+}
+
+footer .background-footer {
+  background-image: url(../images/footer_background.jpg);
+  background-size: cover;
+  position: relative;
+}
+footer .background-footer .row .col-4 h4, footer .background-footer .row .col-4 .h4 {
+  color: white;
+  margin-bottom: 30px;
+}
+footer .background-footer .row .col-4 p {
+  color: white;
+}
+footer .background-footer .row .col-4 i {
+  color: white;
+  font-size: 20px;
+}
+footer .background-footer .row .col-4 button {
+  background-color: #B12A3B;
+  border: solid 1px white;
+}
+footer .footer-rose {
+  background-color: #B12A3B;
+  padding: 40px;
 }
 
 /*# sourceMappingURL=app.css.map */
