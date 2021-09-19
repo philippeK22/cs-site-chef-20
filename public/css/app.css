@@ -17238,6 +17238,9 @@ body {
 body {
   margin: 0;
 }
+body header {
+  position: relative;
+}
 body .navbar {
   position: absolute;
   z-index: 1;
@@ -17287,6 +17290,7 @@ body .buttrond {
 section:first-of-type {
   background-image: url(../images/main_bg.jpg);
   display: flex;
+  position: relative;
 }
 section:first-of-type .box {
   display: flex;
@@ -17294,6 +17298,7 @@ section:first-of-type .box {
 }
 section:first-of-type .row h1, section:first-of-type .row .h1 {
   font-family: "courgette";
+  font-size: 50px;
 }
 section:first-of-type .row span {
   color: #B12A3B;
@@ -17301,6 +17306,9 @@ section:first-of-type .row span {
 }
 section:first-of-type .row p {
   padding: 0 25%;
+}
+section:first-of-type .row img[alt=decoration_line] {
+  margin-left: 30%;
 }
 section:first-of-type .row .logoIcone {
   color: #CCCCCC;
@@ -17349,6 +17357,9 @@ section:nth-of-type(3) {
   background-image: url(../images/main_bg.jpg);
   display: flex;
 }
+section:nth-of-type(3) .container {
+  position: relative;
+}
 section:nth-of-type(3) .container .box {
   display: flex;
   justify-content: space-between;
@@ -17359,6 +17370,9 @@ section:nth-of-type(3) .container .row h1, section:nth-of-type(3) .container .ro
 }
 section:nth-of-type(3) .container .row span {
   color: #B12A3B;
+}
+section:nth-of-type(3) .container .row img[alt=decoration_line] {
+  margin-left: 30%;
 }
 section:nth-of-type(3) .container .table-bg {
   background-image: url(../images/book_table_bg.jpg);
@@ -17386,20 +17400,48 @@ section:nth-of-type(3) .container .table-bg .col-6 input {
 }
 section:nth-of-type(3) .book-now {
   margin-left: 45%;
-  border-radius: 10%;
 }
 section:nth-of-type(3) .book-now button {
   background-color: #B12A3B;
 }
-section:nth-of-type(3) .col-6 img {
+section .row {
+  margin-left: 10%;
+}
+section .row .col-6 .menu-3 {
+  width: 70%;
+  height: 30vh;
   border-radius: 15px;
 }
-section:nth-of-type(3) .col-6 p {
-  background-color: red;
+section .row .col-6 .lorem-1 {
+  background-color: #B12A3B;
   position: relative;
+  color: white;
+  max-width: max-content;
+  text-align: center;
+  padding-top: 3%;
+  bottom: 30px;
+  border-radius: 10px;
+  left: 50px;
+  padding: 15px;
 }
-section:nth-of-type(3) .col-6 span {
-  font-size: 50px;
+section .row .col-6 span {
+  font-size: 20px;
+  font-weight: bolder;
+}
+section .row .col-6 .lorem-2 {
+  position: relative;
+  bottom: 10%;
+  margin-left: 15px;
+}
+section .row .col-6 .lorem-3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+section .know-more {
+  margin-left: 45%;
+}
+section .know-more button {
+  background-color: #B12A3B;
 }
 
 /*# sourceMappingURL=app.css.map */
