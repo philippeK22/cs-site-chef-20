@@ -17247,16 +17247,14 @@ body .navbar {
 }
 body .navbar ul li:hover {
   color: red;
-}
-body .navbar ul li:hover a:hover {
-  color: red;
+  list-style: none;
 }
 body .carrousel-1 {
   position: relative;
 }
 body .image1 {
   background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url(../images/banner1.jpg);
-  height: 100vh;
+  height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -17284,12 +17282,29 @@ body .image1 button:nth-of-type(2) {
   background-color: #B12A3B;
   color: white;
 }
-body .activebuttrond {
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
+body .buttrond {
+  border-radius: 50% !important;
+  height: 20px !important;
+  width: 20px !important;
+  color: white;
+}
+body img[alt=image-banner] {
+  filter: brightness(30%);
+}
+body .biscuit {
+  background-image: url(../images/bottom_decoration_img.png);
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 15px;
+  top: 98%;
+  position: absolute;
 }
 
+@media screen and (max-width: 620px) {
+  header {
+    flex-direction: column;
+  }
+}
 section:first-of-type {
   background-image: url(../images/main_bg.jpg);
   display: flex;
@@ -17329,20 +17344,26 @@ section:first-of-type .row .logoIcone h3, section:first-of-type .row .logoIcone 
   font-family: "courgette";
   border-bottom: #CCCCCC solid 3px;
 }
-section:first-of-type .row .col-5 h4, section:first-of-type .row .col-5 .h4 {
+section:first-of-type .row .colonne h4, section:first-of-type .row .colonne .h4 {
   font-weight: bold;
 }
-section:first-of-type .row .col-5 p {
+section:first-of-type .row .colonne p {
   padding: 1px;
   text-transform: capitalize;
 }
-section:first-of-type .row .col-5 span {
+section:first-of-type .row .colonne span {
   background-color: #CCCCCC;
   color: #B12A3B;
   font-weight: bold;
   padding: 0 10px;
 }
 
+@media screen and (max-width: 620px) {
+  img[alt=menu_image_1] {
+    width: 5%;
+    height: 5%;
+  }
+}
 section:nth-of-type(2) {
   background-image: linear-gradient(#0a0303f1, #080806ea), url(../images/team_background.jpg);
   background-size: cover;
@@ -17394,21 +17415,21 @@ section:nth-of-type(3) .container .table-bg span {
   font-weight: bolder;
   font-size: 20px;
 }
-section:nth-of-type(3) .container .table-bg .col-6 p {
+section:nth-of-type(3) .container .table-bg span p {
   color: red;
 }
-section:nth-of-type(3) .container .table-bg .col-6 input {
+section:nth-of-type(3) .container .table-bg .book-yourtable input {
   margin: 10px;
   padding: 10px 175px 10px 10px;
   color: red;
   border-radius: 15px;
 }
-section:nth-of-type(3) .container .table-bg .col-6 select {
+section:nth-of-type(3) .container .table-bg .book-yourtable select {
   padding: 15px 275px 10px 10px;
   border-radius: 15px;
   margin: 10px;
 }
-section:nth-of-type(3) .container .table-bg .col-6 .select-2 {
+section:nth-of-type(3) .container .table-bg .book-yourtable .select-2 {
   padding: 15px 240px 10px 10px;
 }
 section:nth-of-type(3) .book-now {
@@ -17418,10 +17439,10 @@ section:nth-of-type(3) .book-now button {
   background-color: #B12A3B;
   text-transform: uppercase;
 }
-section .row .col-6 .menu-3 {
+section .row .our-blog .menu-3 {
   border-radius: 15px;
 }
-section .row .col-6 .lorem-1 {
+section .row .our-blog .lorem-1 {
   background-color: #B12A3B;
   position: relative;
   color: white;
@@ -17433,16 +17454,16 @@ section .row .col-6 .lorem-1 {
   padding: 15px 10px;
   width: 75%;
 }
-section .row .col-6 span {
+section .row .our-blog span {
   font-size: 20px;
   font-weight: bolder;
 }
-section .row .col-6 .lorem-2 {
+section .row .our-blog .lorem-2 {
   position: relative;
   bottom: 10%;
   margin-left: 15px;
 }
-section .row .col-6 .lorem-3 {
+section .row .our-blog .lorem-3 {
   margin-bottom: 15px;
   font-size: 20px;
 }
@@ -17468,20 +17489,20 @@ section:nth-of-type(4) h1, section:nth-of-type(4) .h1 {
 section:nth-of-type(4) h1 span, section:nth-of-type(4) .h1 span {
   color: #B12A3B;
 }
-section:nth-of-type(4) .row .col-6 img {
+section:nth-of-type(4) .row .testimonials img {
   margin: 15px;
 }
-section:nth-of-type(4) .row .col-6 .clients {
+section:nth-of-type(4) .row .testimonials .clients {
   border: solid 1px white;
   border-radius: 15px;
 }
-section:nth-of-type(4) .row .col-6 .clients h4, section:nth-of-type(4) .row .col-6 .clients .h4 {
+section:nth-of-type(4) .row .testimonials .clients h4, section:nth-of-type(4) .row .testimonials .clients .h4 {
   color: white;
 }
-section:nth-of-type(4) .row .col-6 .clients span {
+section:nth-of-type(4) .row .testimonials .clients span {
   color: #B12A3B;
 }
-section:nth-of-type(4) .row .col-6 .clients p {
+section:nth-of-type(4) .row .testimonials .clients p {
   color: white;
 }
 section .our-contact {
@@ -17509,23 +17530,30 @@ section .our-contact .box-rouge i {
   margin: 10px;
 }
 
+footer .biscuit-footer {
+  background-image: url(../images/footer_bottom_decoration_img.png);
+  width: 100%;
+  height: 20px;
+  background-repeat: repeat-x;
+  position: absolute;
+}
 footer .background-footer {
   background-image: url(../images/footer_background.jpg);
   background-size: cover;
   position: relative;
 }
-footer .background-footer .row .col-4 h4, footer .background-footer .row .col-4 .h4 {
+footer .background-footer .row .footer-1 h4, footer .background-footer .row .footer-1 .h4 {
   color: white;
   margin-bottom: 30px;
 }
-footer .background-footer .row .col-4 p {
+footer .background-footer .row .footer-1 p {
   color: white;
 }
-footer .background-footer .row .col-4 i {
+footer .background-footer .row .footer-1 i {
   color: white;
   font-size: 20px;
 }
-footer .background-footer .row .col-4 button {
+footer .background-footer .row .footer-1 button {
   background-color: #B12A3B;
   border: solid 1px white;
 }
