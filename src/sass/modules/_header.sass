@@ -1,5 +1,6 @@
 body
     margin: 0
+    
     header
         position: relative
     
@@ -7,17 +8,13 @@ body
     .navbar // rewrite class bootstrap
         position: absolute
         z-index: 1
+        @media screen and (max-width:620px)
+            z-index: auto
         ul
             li
             li:hover    
                 color: red       
                 list-style: none
-                
-                
-                   
-            
-        
-            
         
     .carrousel-1
         position: relative
@@ -66,12 +63,16 @@ body
         position: absolute
         
         
-        
-        
-@media screen and (max-width: 620px)
-    header
-        flex-direction: column
     
+    
+    
+        
+   
+                
+                   
+            
+        
+            
         
 
     

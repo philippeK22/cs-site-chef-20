@@ -11,15 +11,28 @@ section
             color: white
             span
                 color: #B12A3B
+        img[ alt="decoration_line"]
+            margin: auto
+            @media screen and (max-width: 620px)
+                margin: auto
         .row
-            .testimonials    
+            .testimonials
+                @media screen and (max-width: 620px)
+                    flex-direction: column
                 img
                     margin: 15px
+                    @media screen and (max-width: 620px)
+                        height: 50%
+                        margin-left: 30%
+                    @media screen and (min-width:620px) and (max-width:1024px)
+                        height: 100%
+
                 .clients
                     border: solid 1px white
                     border-radius: 15px
-                    
-                    
+                    @media screen and (max-width: 620px)
+                        margin: 15px
+                        order: 2
                     h4
                         color: white
                     span
@@ -32,19 +45,46 @@ section
         height: 100vh
         justify-content: center
         top: 20px
+        @media screen and (max-width: 620px)
+            text-align: center
+        
         h1
             color: black
             font-family: "courgette"
             margin-top: 5%
         img[alt="decoration_line"]
-            margin-left: 35%
+            margin: auto
+            @media screen and (max-width:620px) 
+                max-width: 30%
+            @media screen and (min-width:620px) and (max-width:1024px)
+                margin: auto
         .box-rouge
             border-radius: 15px
             background-color: #B12A3B
             margin-top: 100px
+            margin-bottom: 30px
+            @media screen and (max-width: 620px)
+                padding: 20px 50px
+            
+            
             i
                 font-size: 40px
                 margin: 10px
              
+                
+                
             
+            
+                        
+                
+
+
+            
+                    
+
+                    
+                    
+                
+                
+
         

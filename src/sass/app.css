@@ -17238,17 +17238,17 @@ body {
 body {
   margin: 0;
 }
+@media screen and (max: width 620px) {
+  body {
+    width: 100%;
+  }
+}
 body header {
   position: relative;
 }
 body .navbar {
   position: absolute;
   z-index: 1;
-}
-@media screen and (max-width: 620px) {
-  body .navbar {
-    z-index: auto;
-  }
 }
 body .navbar ul li:hover {
   color: red;
@@ -17305,6 +17305,11 @@ body .biscuit {
   position: absolute;
 }
 
+@media screen and (max-width: 620px) {
+  header {
+    flex-direction: column;
+  }
+}
 section:first-of-type {
   background-image: url(../images/main_bg.jpg);
   display: flex;
@@ -17326,12 +17331,7 @@ section:first-of-type .row p {
   padding: 0 25%;
 }
 section:first-of-type .row img[alt=decoration_line] {
-  margin: auto;
-}
-@media screen and (max-width: 620px) {
-  section:first-of-type .row img[alt=decoration_line] {
-    margin: auto;
-  }
+  margin-left: 30%;
 }
 section:first-of-type .row .logoIcone {
   color: #CCCCCC;
@@ -17362,15 +17362,13 @@ section:first-of-type .row .colonne span {
   font-weight: bold;
   padding: 0 10px;
 }
-section:first-of-type .box img[alt=decoration_line] {
-  margin: auto;
-}
+
 @media screen and (max-width: 620px) {
-  section:first-of-type .box img[alt=decoration_line] {
-    width: 30%;
+  img[alt=menu_image_1] {
+    width: 5%;
+    height: 5%;
   }
 }
-
 section:nth-of-type(2) {
   background-image: linear-gradient(#0a0303f1, #080806ea), url(../images/team_background.jpg);
   background-size: cover;
@@ -17406,17 +17404,17 @@ section:nth-of-type(3) .container .row span {
 section:nth-of-type(3) .container .row img[alt=decoration_line] {
   margin-left: 30%;
 }
-@media screen and (max-width: 620px) {
-  section:nth-of-type(3) .container .row img[alt=decoration_line] {
-    max-width: 20%;
-  }
-}
 section:nth-of-type(3) .container .table-bg {
   background-image: url(../images/book_table_bg.jpg);
   background-size: cover;
   margin: 0 10%;
   border-radius: 15px;
   height: 100vh;
+}
+@media screen and (max-width: 620px) {
+  section:nth-of-type(3) .container .table-bg {
+    width: 100%;
+  }
 }
 section:nth-of-type(3) .container .table-bg p {
   padding-top: 70px;
@@ -17438,71 +17436,28 @@ section:nth-of-type(3) .container .table-bg .book-yourtable input {
 }
 @media screen and (max-width: 620px) {
   section:nth-of-type(3) .container .table-bg .book-yourtable input {
-    max-width: 20%;
+    padding: 30px;
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
   }
 }
-section:nth-of-type(3) .container .table-bg .book-yourtable .select-1 {
+section:nth-of-type(3) .container .table-bg .book-yourtable select {
   padding: 15px 275px 10px 10px;
   border-radius: 15px;
   margin: 10px;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(3) .container .table-bg .book-yourtable .select-1 {
-    padding: 10px 100px 5px 5px;
-    margin: 0;
-  }
 }
 section:nth-of-type(3) .container .table-bg .book-yourtable .select-2 {
   padding: 15px 240px 10px 10px;
-  border-radius: 15px;
-  margin: 10px;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(3) .container .table-bg .book-yourtable .select-2 {
-    padding: 10px 80px 5px 5px;
-  }
-}
-section:nth-of-type(3) .container .table-bg .book-yourtable .select-3 {
-  padding: 15px 275px 10px 10px;
-  border-radius: 15px;
-  margin: 10px;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(3) .container .table-bg .book-yourtable .select-3 {
-    padding: 10px 100px 5px 5px;
-  }
 }
 section:nth-of-type(3) .book-now {
   margin-left: 40%;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(3) .book-now {
-    width: 30%;
-    padding: 1px;
-  }
 }
 section:nth-of-type(3) .book-now button {
   background-color: #B12A3B;
   text-transform: uppercase;
 }
-@media screen and (max-width: 620px) {
-  section:nth-of-type(3) .book-now button {
-    padding: 1px;
-  }
-}
-section .row img[alt=decoration_line] {
-  margin: auto;
-}
 section .row .our-blog .menu-3 {
   border-radius: 15px;
-}
-@media screen and (max-width: 620px) {
-  section .row .our-blog .menu-3 {
-    max-width: 100%;
-  }
 }
 section .row .our-blog .lorem-1 {
   background-color: #B12A3B;
@@ -17532,13 +17487,6 @@ section .row .our-blog .lorem-3 {
 section .know-more {
   margin-left: 45%;
 }
-@media screen and (max-width: 620px) {
-  section .know-more {
-    padding: 1px;
-    width: 30%;
-    margin-left: 40%;
-  }
-}
 section .know-more button {
   background-color: #B12A3B;
   color: white;
@@ -17558,42 +17506,12 @@ section:nth-of-type(4) h1, section:nth-of-type(4) .h1 {
 section:nth-of-type(4) h1 span, section:nth-of-type(4) .h1 span {
   color: #B12A3B;
 }
-section:nth-of-type(4) img[alt=decoration_line] {
-  margin: auto;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(4) img[alt=decoration_line] {
-    margin: auto;
-  }
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(4) .row .testimonials {
-    flex-direction: column;
-  }
-}
 section:nth-of-type(4) .row .testimonials img {
   margin: 15px;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(4) .row .testimonials img {
-    height: 50%;
-    margin-left: 30%;
-  }
-}
-@media screen and (min-width: 620px) and (max-width: 1024px) {
-  section:nth-of-type(4) .row .testimonials img {
-    height: 100%;
-  }
 }
 section:nth-of-type(4) .row .testimonials .clients {
   border: solid 1px white;
   border-radius: 15px;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(4) .row .testimonials .clients {
-    margin: 15px;
-    order: 2;
-  }
 }
 section:nth-of-type(4) .row .testimonials .clients h4, section:nth-of-type(4) .row .testimonials .clients .h4 {
   color: white;
@@ -17611,45 +17529,31 @@ section .our-contact {
   justify-content: center;
   top: 20px;
 }
-@media screen and (max-width: 620px) {
-  section .our-contact {
-    text-align: center;
-  }
-}
 section .our-contact h1, section .our-contact .h1 {
   color: black;
   font-family: "courgette";
   margin-top: 5%;
 }
 section .our-contact img[alt=decoration_line] {
-  margin: auto;
-}
-@media screen and (max-width: 620px) {
-  section .our-contact img[alt=decoration_line] {
-    max-width: 30%;
-  }
-}
-@media screen and (min-width: 620px) and (max-width: 1024px) {
-  section .our-contact img[alt=decoration_line] {
-    margin: auto;
-  }
+  margin-left: 35%;
 }
 section .our-contact .box-rouge {
   border-radius: 15px;
   background-color: #B12A3B;
   margin-top: 100px;
-  margin-bottom: 30px;
-}
-@media screen and (max-width: 620px) {
-  section .our-contact .box-rouge {
-    padding: 20px 50px;
-  }
 }
 section .our-contact .box-rouge i {
   font-size: 40px;
   margin: 10px;
 }
 
+footer .biscuit-footer {
+  background-image: url(../images/footer_bottom_decoration_img.png);
+  width: 100%;
+  height: 20px;
+  background-repeat: repeat-x;
+  position: absolute;
+}
 footer .background-footer {
   background-image: url(../images/footer_background.jpg);
   background-size: cover;
