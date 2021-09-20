@@ -7,11 +7,17 @@ body
     .navbar // rewrite class bootstrap
         position: absolute
         z-index: 1
-        // top: 150px
-        li
-            a:hover
-                 color: red    
         
+        // top: 150px
+        ul
+            li:hover
+                color: red
+                a:hover
+                    color: red
+            
+                   
+        
+            
         
     .carrousel-1
         position: relative
@@ -43,13 +49,16 @@ body
             &:nth-of-type(2)
                 background-color: #B12A3B
                 color: white    
-    .buttrond
-        height: 15px
-        width: 15px
+    .activebuttrond
+        height: 8px
+        width: 8px
         border-radius: 50%
         
         
-        
+@media screen and (max-width: 620px)
+
+    
+      
 
 
 

@@ -17245,7 +17245,10 @@ body .navbar {
   position: absolute;
   z-index: 1;
 }
-body .navbar li a:hover {
+body .navbar ul li:hover {
+  color: red;
+}
+body .navbar ul li:hover a:hover {
   color: red;
 }
 body .carrousel-1 {
@@ -17281,9 +17284,9 @@ body .image1 button:nth-of-type(2) {
   background-color: #B12A3B;
   color: white;
 }
-body .buttrond {
-  height: 15px;
-  width: 15px;
+body .activebuttrond {
+  height: 8px;
+  width: 8px;
   border-radius: 50%;
 }
 
@@ -17396,8 +17399,17 @@ section:nth-of-type(3) .container .table-bg .col-6 p {
 }
 section:nth-of-type(3) .container .table-bg .col-6 input {
   margin: 10px;
-  padding: 10px;
+  padding: 10px 175px 10px 10px;
   color: red;
+  border-radius: 15px;
+}
+section:nth-of-type(3) .container .table-bg .col-6 select {
+  padding: 15px 275px 10px 10px;
+  border-radius: 15px;
+  margin: 10px;
+}
+section:nth-of-type(3) .container .table-bg .col-6 .select-2 {
+  padding: 15px 240px 10px 10px;
 }
 section:nth-of-type(3) .book-now {
   margin-left: 40%;
@@ -17490,6 +17502,7 @@ section .our-contact img[alt=decoration_line] {
 section .our-contact .box-rouge {
   border-radius: 15px;
   background-color: #B12A3B;
+  margin-top: 100px;
 }
 section .our-contact .box-rouge i {
   font-size: 40px;
