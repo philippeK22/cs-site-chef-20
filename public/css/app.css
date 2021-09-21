@@ -17250,9 +17250,14 @@ body .navbar {
     z-index: auto;
   }
 }
-body .navbar ul li:hover {
-  color: red;
+body .navbar ul {
+  .navbar-brand-text-transform: uppercase;
+}
+body .navbar ul .li {
   list-style: none;
+}
+body .navbar ul .navbar-brand:hover {
+  color: red;
 }
 body .carrousel-1 {
   position: relative;
@@ -17484,10 +17489,6 @@ section:nth-of-type(3) .book-now {
     padding: 1px;
   }
 }
-section:nth-of-type(3) .book-now button {
-  background-color: #B12A3B;
-  text-transform: uppercase;
-}
 @media screen and (max-width: 620px) {
   section:nth-of-type(3) .book-now button {
     padding: 1px;
@@ -17531,17 +17532,14 @@ section .row .our-blog .lorem-3 {
 }
 section .know-more {
   margin-left: 45%;
-}
-@media screen and (max-width: 620px) {
-  section .know-more {
-    padding: 1px;
-    width: 30%;
-    margin-left: 40%;
-  }
+  padding: 1px;
+  width: 30%;
+  margin-left: 40%;
 }
 section .know-more button {
   background-color: #B12A3B;
   color: white;
+  text-transform: uppercase;
   text-transform: uppercase;
 }
 
