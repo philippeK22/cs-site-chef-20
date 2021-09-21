@@ -17244,11 +17244,8 @@ body header {
 body .navbar {
   position: absolute;
   z-index: 1;
-}
-@media screen and (max-width: 620px) {
-  body .navbar {
-    z-index: auto;
-  }
+  left: 50%;
+  transform: translate(-50%);
 }
 body .navbar ul {
   .navbar-brand-text-transform: uppercase;
@@ -17456,8 +17453,8 @@ section:nth-of-type(3) .container .table-bg .book-yourtable .select-1 {
 }
 @media screen and (max-width: 620px) {
   section:nth-of-type(3) .container .table-bg .book-yourtable .select-1 {
-    padding: 10px 100px 5px 5px;
-    margin: 0;
+    padding: 10px 100px 0px 5px;
+    padding-left: 0;
   }
 }
 section:nth-of-type(3) .container .table-bg .book-yourtable .select-2 {
@@ -17467,7 +17464,8 @@ section:nth-of-type(3) .container .table-bg .book-yourtable .select-2 {
 }
 @media screen and (max-width: 620px) {
   section:nth-of-type(3) .container .table-bg .book-yourtable .select-2 {
-    padding: 10px 80px 5px 5px;
+    padding: 10px 80px 0px 5px;
+    padding-left: 0;
   }
 }
 section:nth-of-type(3) .container .table-bg .book-yourtable .select-3 {
@@ -17477,7 +17475,8 @@ section:nth-of-type(3) .container .table-bg .book-yourtable .select-3 {
 }
 @media screen and (max-width: 620px) {
   section:nth-of-type(3) .container .table-bg .book-yourtable .select-3 {
-    padding: 10px 100px 5px 5px;
+    padding: 10px 100px 0px 5px;
+    padding-left: 0;
   }
 }
 section:nth-of-type(3) .book-now {
@@ -17603,7 +17602,6 @@ section:nth-of-type(4) .row .testimonials .clients p {
 section .our-contact {
   background-image: url(../images/main_bg.jpg);
   position: relative;
-  height: 100vh;
   justify-content: center;
   top: 20px;
 }
@@ -17634,11 +17632,18 @@ section .our-contact .box-rouge {
   border-radius: 15px;
   background-color: #B12A3B;
   margin-top: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
+  width: 25%;
+  margin: auto;
 }
 @media screen and (max-width: 620px) {
   section .our-contact .box-rouge {
-    padding: 20px 50px;
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 620px) and (max-width: 1024px) {
+  section .our-contact .box-rouge {
+    width: 100% !important;
   }
 }
 section .our-contact .box-rouge i {
