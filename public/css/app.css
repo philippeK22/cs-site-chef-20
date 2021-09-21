@@ -17264,7 +17264,7 @@ body .carrousel-1 {
 }
 body .image1 {
   background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url(../images/banner1.jpg);
-  height: 90vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -17306,7 +17306,7 @@ body .biscuit {
   background-repeat: repeat-x;
   width: 100%;
   height: 15px;
-  top: 98%;
+  top: 99%;
   position: absolute;
 }
 
@@ -17522,8 +17522,6 @@ section .row .our-blog span {
   font-weight: bolder;
 }
 section .row .our-blog .lorem-2 {
-  position: relative;
-  bottom: 10%;
   margin-left: 15px;
 }
 section .row .our-blog .lorem-3 {
